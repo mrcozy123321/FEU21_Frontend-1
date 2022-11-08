@@ -1,14 +1,15 @@
 .navbar {
-  /* background-color: blue; */
-  border: 2px black;
+  background-color: #faf9f9;
+  border-bottom: 1px solid black;
 }
 
 .container {
-  margin: 2rem;
+  width: 100%;
   text-align: center;
 }
 
 .nav-links {
+  padding-block: 2rem;
   display: flex;
   justify-content: space-evenly;
 }
