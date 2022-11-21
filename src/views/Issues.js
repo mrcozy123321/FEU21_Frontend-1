@@ -8,8 +8,10 @@ const Issues = () => {
   return (
     <>
     <Navbar/>
-    <div>
-      <IssueCard></IssueCard>
+    <div className='issues'>
+      <div className='container'>
+        <IssueCard></IssueCard>
+      </div>
     </div>
     </>
   )

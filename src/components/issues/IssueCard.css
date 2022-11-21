@@ -1,9 +1,10 @@
 .issue {
   display: block;
   margin-top: 3rem;
+  width: 20%;
 }
-.container {
-  width: 80%;
+.issue .container {
+  width: 100%;
 }
 .issuecard {
   background-color: #d88b3d;
@@ -50,4 +51,12 @@
 }
 .issuecard-message {
   padding-bottom: 1rem;
+}
+.issuecard-footer {
+  text-align: right;
+  margin-right: 1rem;
+}
+.issuecard-time {
+  font-size: 12px;
+  color: #00000070;
 }

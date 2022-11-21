@@ -14,8 +14,13 @@ const IssueCard = () => {
               <div id='issuecard-status-ball' name='issuecard-status-ball' className='issuecard-status-ball issuecard-status-complete'></div>
             </div>
           </div>
+          <div className='issuecard-body'>
           <p id='issuecard-subject' name='issuecard-subject' className='issuecard-subject'>Subject for something random to talk about</p>
           <p id='issuecard-message' name='issuecard-message' className='issuecard-message'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+          </div>
+          <div className='issuecard-footer'>
+            <p id='issuecard-time' name='issuecard-time' className='issuecard-time'>Created at: 21-11-2022:05:34</p>
+          </div>
         </div>
       </div>
     </div>
