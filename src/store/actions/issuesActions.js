@@ -7,9 +7,9 @@ export const getIssues = (id) => {
       type: actiontypes().issues.getIssues
     })
     try {
-      let res;
-      res = await axios.get('https://localhost:7297/api/Issue')
+      const res = await axios.get('https://localhost:7297/api/Issue')
       dispatch(getIssuesSuccess(res.data.issues))
+      console.log(res.data)
     }
     catch (err) {
       dispatch(getIssuesFailure(err.message))

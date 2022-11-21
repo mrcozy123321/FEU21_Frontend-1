@@ -14,7 +14,6 @@ const issuesReducer = (state = initState, action) => {
         loading: true
       }
     }
-
     case actiontypes().issues.getIssuesSuccess: {
       return {
         ...state,

@@ -16,9 +16,9 @@ const IssuesList = () => {
       { error && <p>error</p> }
       <div className='issues'>
         <div className='container'>
-          { issues.map(issue => (
+          {/* { data.map(issue => (
             <IssueCard key={issue.id} issue={issue} />
-          ))}
+           ))} */}
         </div>
       </div>
     </>
