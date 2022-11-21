@@ -2,24 +2,24 @@ import React from 'react'
 import './IssueCard.css'
 // Need to create cards with styling
 
-const IssueCard = () => {
+const IssueCard = ({issue}) => {
   return (
     <div className='issue'>
       <div className='container'>
         <div className='issuecard'>
           <div className='issuecard-header'>
-            <p id='issuecard-email' name='issuecard-email' className='issuecard-email'>John.Doe@mail.com</p>
+            <p id='issuecard-email' name='issuecard-email' className='issuecard-email'>{issue.email}</p>
             <div className='issuecard-status-container'>
-              <p id='issuecard-status' name='issuecard-status'>Status</p>
+              <p id='issuecard-status' name='issuecard-status'>{issue.status}</p>
               <div id='issuecard-status-ball' name='issuecard-status-ball' className='issuecard-status-ball issuecard-status-complete'></div>
             </div>
           </div>
           <div className='issuecard-body'>
-          <p id='issuecard-subject' name='issuecard-subject' className='issuecard-subject'>Subject for something random to talk about</p>
-          <p id='issuecard-message' name='issuecard-message' className='issuecard-message'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+          <p id='issuecard-subject' name='issuecard-subject' className='issuecard-subject'>{issue.subject}</p>
+          <p id='issuecard-message' name='issuecard-message' className='issuecard-message'>{issue.message}</p>
           </div>
           <div className='issuecard-footer'>
-            <p id='issuecard-time' name='issuecard-time' className='issuecard-time'>Created at: 21-11-2022:05:34</p>
+            <p id='issuecard-time' name='issuecard-time' className='issuecard-time'>{issue.created}</p>
           </div>
         </div>
       </div>

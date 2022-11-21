@@ -1,16 +1,25 @@
-import React from 'react'
-import Navbar from '../components/navbar/Navbar'
-import '../views/styles/Issues.css'
-import IssueCard from '../components/issues/IssueCard'
+import React from 'react';
+import Navbar from '../components/navbar/Navbar';
+// import '../views/styles/Issues.css';
+import IssuesList from '../components/issues/IssuesList';
 
-// Need to create Issue card with styling and create a grid to display in Issues.js
+
 const Issues = () => {
+  
+  // const dispatch = useDispatch();
+  // const [newIssue, setNewIssue] = useState({});
+
+  // useEffect(() => {
+  //   dispatch
+  // })
+
+
   return (
     <>
     <Navbar/>
     <div className='issues'>
       <div className='container'>
-        <IssueCard></IssueCard>
+        <IssuesList/>
       </div>
     </div>
     </>
