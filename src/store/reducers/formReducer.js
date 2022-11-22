@@ -3,12 +3,10 @@ import actiontypes from "../actiontypes";
 const initState = {
   error: null,
   loading: false,
-  id: null,
   email: null,
   subject: null,
   message: null,
   statusId: null,
-  created: null
 }
 
 const formReducer = (state = initState, action) => {
@@ -23,12 +21,10 @@ const formReducer = (state = initState, action) => {
       return {
         ...state,
         loading: false,
-        id: action.payload.id,
         email: action.payload.email,
         subject: action.payload.subject,
         message: action.payload.message,
         statusId: action.payload.statusId,
-        created: action.payload.created
       }
     
     case actiontypes().form.createIssueFailure:

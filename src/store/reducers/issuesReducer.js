@@ -3,7 +3,7 @@ import actiontypes from "../actiontypes";
 const initState = {
   error: null,
   loading: false,
-  issues: []
+  data: []
 }
 
 const issuesReducer = (state = initState, action) => {
@@ -19,7 +19,7 @@ const issuesReducer = (state = initState, action) => {
         ...state,
         loading: false,
         error: null,
-        issues: action.payload
+        data: action.payload
       }
     }
 
