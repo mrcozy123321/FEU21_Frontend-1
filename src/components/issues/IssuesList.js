@@ -8,15 +8,15 @@ import IssueCard from './IssueCard';
 
 const IssuesList = () => {
   
-  const { loading, error, data: issues } = useSelector(state => state.issuesReducer)
+  // const { loading, error, data: issues } = useSelector(state => state.issues)
 
   return (
     <>
-      { loading && 'loading..'}
-      { error && <p>error</p> }
+      {/* { loading && 'loading..'}
+      { error && <p>error</p> } */}
       <div className='issues'>
         <div className='container'>
-          {/* { data.map(issue => (
+          {/* { issues.map(issue => (
             <IssueCard key={issue.id} issue={issue} />
            ))} */}
         </div>

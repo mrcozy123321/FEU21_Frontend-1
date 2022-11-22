@@ -8,8 +8,8 @@ export const getIssues = (id) => {
     })
     try {
       const res = await axios.get('https://localhost:7297/api/Issue')
-      dispatch(getIssuesSuccess(res.data.issues))
-      console.log(res.data)
+      dispatch(getIssuesSuccess(res.data))
+      console.log(res.data, 'Faaaan')
     }
     catch (err) {
       dispatch(getIssuesFailure(err.message))

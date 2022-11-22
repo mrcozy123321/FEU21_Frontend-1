@@ -10,7 +10,7 @@ const IssueCard = ({issue}) => {
           <div className='issuecard-header'>
             <p id='issuecard-email' name='issuecard-email' className='issuecard-email'>{issue.email}</p>
             <div className='issuecard-status-container'>
-              <p id='issuecard-status' name='issuecard-status'>{issue.status}</p>
+              <p id='issuecard-status' name='issuecard-status'>{issue.statusName}</p>
               <div id='issuecard-status-ball' name='issuecard-status-ball' className='issuecard-status-ball issuecard-status-complete'></div>
             </div>
           </div>
